@@ -1,15 +1,16 @@
 package com.EDP.TiendaProyectJavaTT.dominio.repositorio;
 
 import com.EDP.TiendaProyectJavaTT.dominio.dto.Product;
+import com.EDP.TiendaProyectJavaTT.persistencia.entity.Productos;
 
 import java.util.List;
 
-public interface ProductRepository {
-    List<Product> GetAll();
+public interface ProductRepository  {
+    List<Product> GetAll() ;
 
-    public void deleteProduct();
+    void deleteById(int id);
 
-    public void FindById(int id);
+    Product save(Product product);
 
-    public void FindbyCategory(int CategoryId);
+    List <Product> FindByCategory(int categoryId);
 }

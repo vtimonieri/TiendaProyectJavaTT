@@ -7,6 +7,7 @@ import java.util.List;
 
 
 
+
 //mport jakarta.persistence.ManyToOne;
 @Entity
 @Table(name="PRODUCTOS")

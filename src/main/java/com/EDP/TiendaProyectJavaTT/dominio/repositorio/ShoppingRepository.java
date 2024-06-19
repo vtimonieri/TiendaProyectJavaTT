@@ -1,6 +1,7 @@
 package com.EDP.TiendaProyectJavaTT.dominio.repositorio;
 
-import com.EDP.TiendaProyectJavaTT.dominio.dto.Shopping;
+import com.EDP.TiendaProyectJavaTT.persistencia.entity.Compras;
+
 
 
 import java.util.List;
@@ -8,9 +9,9 @@ import java.util.List;
 public interface ShoppingRepository {
 
 
-   List<Shopping> GetAll();
+    List<Compras> GetAll() ;
 
-    public void deleteShopping(int id);
+    void deleteShopping(int shoppingId);
 
-    public void findById(int id);
+    void findById(int shoppingId);
     }

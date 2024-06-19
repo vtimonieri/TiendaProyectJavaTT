@@ -18,7 +18,7 @@ public interface ProductMapper {
     @Mappings({
             @Mapping(source ="id_producto", target = "productId"),
             @Mapping(source ="nombre", target = "name"),
-            @Mapping(source ="id_cateogoria", target = "categoryId"),
+            @Mapping(source ="id_categoria", target = "categoryId"),
             @Mapping(source ="precio_venta", target = "price"),
             @Mapping(source ="estado", target = "state"),
 
@@ -30,12 +30,12 @@ public interface ProductMapper {
 
 
   @Mappings({
-          @Mapping(target ="stock", ignore = true),
+          @Mapping(target ="cantidad_stock", ignore = true),
           @Mapping(target ="codigo_barras", ignore = true)
 
   })
 
-  Product toProduct(Product product);
+  Productos toProductos(Product product);
     }
 
 
